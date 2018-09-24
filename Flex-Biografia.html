@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no ">
+	<meta http-equiv="X-UA-Compatible " content="ie=edge ">
+	<title>Practica de Flex Box</title>
+
+<style>
+	body {
+		background: #45DE47;
+	}
+	section{
+		max-width: 800px;
+		padding: 1rem;
+		margin: 0 auto;
+		border: 1px solid red;
+		border-radius: 5px;
+		background: rgba(248, 247, 247, 0.418);
+		display: flex;
+		align-items: center;
+	}
+
+	img{
+		margin-right: 1rem;
+		flex: 0 1 1500px;
+	}
+	p{
+		margin: 0;
+	}
+
+	@media (max-width:500px){
+		section{
+			flex-direction: column;
+		}
+
+		img{
+			margin-right: 0;
+			flex: 0 1 400px;
+			margin-bottom: 1rem;
+		}
+		p{
+			text-align: center;
+		}
+	}
+</style>
+</head>
+
+<body>
+<section>
+	<img src="../images/agencia.svg" alt="">
+	<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+		text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+		It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+		with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+	</p>
+</section>
+
+</body>
+
+</html>

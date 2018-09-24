@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" , shrink-to-fit=no ">
+	<meta http-equiv="X-UA-Compatible " content="ie=edge ">
+	<title>Practica de Flex Box</title>
+
+	<style>
+		section{
+			width: 400px;
+			height: 300px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			display: flex;
+			
+			/*
+			Orientacion de los hijos por default es horizontal (row) o sea que los hijos se alinean
+			uno al lado del otro y la orientación vertical (column) los hijos se alinea uno de bajo del otro
+			*/
+			flex-direction: row;
+			
+			/*
+			La propiedad wrap hace que cuando ya no espacio en el contenedor el objeto que sobre sale
+			se posicione debajo de los otros objetos
+			*/
+			flex-wrap: wrap;
+
+			/*
+			La propiedad justify-content alinea los objetos en el contenedor ya sea horizontal o
+			vertical dependiendo de la propiedad flex-direction.
+			los valores de justify-content son lex-start, flex-end, center, space-between, space-around
+			*/
+			justify-content: space-around;
+
+			align-items: center;
+
+		}
+		
+		.caja1{
+			background: blue;
+			width: 200px;
+		}
+
+		.caja2{
+			background: rgb(9, 248, 101);
+			width: 150px;
+		}
+
+		.caja3{
+			background: rgb(248, 9, 140);
+			width: 100px;
+		}
+
+		.caja4{
+			background: blue;
+			width: 50px;
+			height: 50px;
+		}
+
+		.caja5{
+			background: rgb(9, 248, 101);
+			width: 50px;
+			height: 50px;
+		}
+
+		.caja6{
+			background: rgb(248, 9, 140);
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<article class="caja1">Caja 1</article>
+		<article class="caja2">Caja 2</article>
+		<article class="caja3">Caja 3</article>
+	</section>
+
+	<section>
+		<article class="caja4">Caja 4</article>
+		<article class="caja5">Caja 5</article>
+		<article class="caja6">Caja 6</article>
+	</section>
+
+</body>
+
+</html>
